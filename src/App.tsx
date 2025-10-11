@@ -1,20 +1,18 @@
 import { PrimeReactProvider } from "primereact/api";
 
 import "primereact/resources/themes/lara-light-cyan/theme.css";
-import { Checkbox } from "primereact/checkbox";
-import { useState } from "react";
+
+import NavBar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
-  const [checked, setChecked] = useState<boolean>(false);
+  
 
   return (
     <PrimeReactProvider>
-      <div className='text-center'>
-        <h1>Hello World</h1>
-        <Checkbox
-          onChange={(e) => setChecked(e.checked)}
-          checked={checked}
-        ></Checkbox>
+        <div className=' min-h-screen bg-white'>
+      <NavBar />
+      <Hero />
       </div>
     </PrimeReactProvider>
   );
