@@ -127,7 +127,7 @@ function Hero() {
     overlayRef.current?.hide();
   };
 
-  const selectionChange = (e) => {
+  const selectionChange = (e: { value: Data[] }) => {
     const currentVisiblePageIds = new Set(data.map((item) => item.id));
     const newlySelectedOnPageIds = new Set(
       e.value.map((item: Data) => item.id)
