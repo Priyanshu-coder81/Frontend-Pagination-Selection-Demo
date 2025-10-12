@@ -226,6 +226,7 @@ function Hero() {
           onSelectionChange={(e) => selectionChange(e)}
           dataKey='id'
           tableStyle={{ minWidth: "50rem" }}
+          className="flex justify-center"
         >
           <Column
             selectionMode='multiple'
@@ -237,19 +238,24 @@ function Hero() {
           <Column
             field='place_of_origin'
             header='Origin'
-            style={{ width: "120px" }}
+            style={{ width: "80px" }}
           />
           <Column
             field='artist_display'
             header='Artist'
-            style={{ width: "350px" }}
+            style={{ width: "400px" }}
+          />
+          <Column
+            field='inscriptions'
+            header='Inscriptions'
+            style={{ width: "400px" }}
           />
           <Column
             field='date_start'
             header='Start'
-            style={{ width: "100px" }}
+            style={{ width: "80px" }}
           />
-          <Column field='date_end' header='End' style={{ width: "100px" }} />
+          <Column field='date_end' header='End' style={{ width: "80px" }} />
         </DataTable>
       )}
 
