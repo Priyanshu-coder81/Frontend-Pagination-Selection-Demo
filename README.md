@@ -86,3 +86,11 @@ This will typically open the application in your browser at `http://localhost:51
 ```bash
 https://api.artic.edu/api/v1/artworks
 ```
+
+
+## 👨‍💻 Author
+
+**Priyanshu Verma**
+
+- Portfolio: https://my-portfolio-beta-nine-27.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/priyanshu-verma-a12ba829a/
